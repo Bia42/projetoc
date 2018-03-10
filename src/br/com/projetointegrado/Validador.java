@@ -18,7 +18,6 @@ public class Validador {
 		super();
 		this.expressao = expressao;
 	}
-
 	/**
 	 * 
 	 * 
@@ -39,17 +38,12 @@ public class Validador {
 
 	public boolean validaQuantParenteses() {
 		int parenteses = 0;
-		String[] expressaoQ = expressao.split(" ");
-		for (int i = 0; i < expressaoQ.length; i++) {
-			if (expressaoQ[i].length() == 1) {
-				if (expressaoQ[i].equals("(")) {
-					parenteses++;
-				}
-				if (expressaoQ[i].equals(")")) {
-					parenteses--;
-				}
-			} else {
-				return false;
+		for (int i = 0; i < expressao.length(); i++) {
+			if (expressao.charAt(i) == '(') {
+				parenteses++;
+			}
+			if (expressao.charAt(i) == ')') {
+				parenteses--;
 			}
 		}
 		if (parenteses == 0) {

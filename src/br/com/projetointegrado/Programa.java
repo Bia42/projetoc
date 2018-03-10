@@ -32,7 +32,10 @@ public class Programa {
 		Validador valida = new Validador(exp.replaceAll(" ", "").toUpperCase());
 		
 		System.out.println(valida.isValida());
-		
+		System.out.println(valida.isValida());
+		System.out.println(valida.isValida());
+		System.out.println(valida.isValida());		System.out.println(valida.isValida());
+		System.out.println(valida.isValida());
 
 	}
 
