@@ -26,7 +26,7 @@ public class Validador {
 	public boolean isValida() {
 
 		if (this.validaQuantParenteses()) {
-			if (expressao.matches("^(~*[(]*?|([FT]|[(]*[~]*?[FT])[)]*?(V|\\^|->|<->)[(]?~?[(]?)*(F|T|[FT][)]*)$")) {
+			if (expressao.matches("^(~*[(]*?|([FT]|[(]*[~]*?[FT])[)]*?(\\^|->|<->|V)[(]?~?[(]?)*(F|T|[FT][)]*)$")) {
 				return true;
 			}
 		} else {
